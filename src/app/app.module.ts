@@ -6,10 +6,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
+import { DonorComponent } from './donor/donor.component';
 
 const appRoutes:Routes=[
   {
     path:"",component:HomeComponent
+  },
+  {
+    path:"donor",component:DonorComponent
   },
 ]
 
@@ -17,7 +21,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    DonorComponent
   ],
   imports: [
     BrowserModule,
