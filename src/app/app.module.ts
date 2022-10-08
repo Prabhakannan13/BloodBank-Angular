@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DonorComponent } from './donor/donor.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 const appRoutes:Routes=[
   {
@@ -19,6 +20,9 @@ const appRoutes:Routes=[
   {
     path:"contact",component:ContactComponent
   },
+  {
+    path:"aboutus",component:AboutusComponent
+  },
 ]
 
 @NgModule({
@@ -27,7 +31,8 @@ const appRoutes:Routes=[
     NavbarComponent,
     HomeComponent,
     DonorComponent,
-    ContactComponent
+    ContactComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
